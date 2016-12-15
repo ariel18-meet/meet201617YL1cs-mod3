@@ -11,9 +11,16 @@ class UserAccount :
         :param secret: user's secret, accessible only with password (string)
         """
         self.username=username
+        self.password=password
+        self.secret=secret
+        
         #Complete the __init__ method
 
     def print_secret(self,password_attempt):
+        if self.password==password_attempt:
+            print (self.secret)
+
+        
         """
         Checks user input, password_attempt - if this matches the user's
         password, then the user's secret is printed to the screen.
@@ -23,3 +30,9 @@ class UserAccount :
         #Complete this method - check the input variable, password_attempt,
         #against the password for this user (the value of the instance variable, password).
         #If, and only if, there's a match, then print the user's secret to the screen.
+
+
+
+
+
+
