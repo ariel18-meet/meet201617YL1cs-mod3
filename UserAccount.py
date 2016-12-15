@@ -19,6 +19,8 @@ class UserAccount :
     def print_secret(self,password_attempt):
         if self.password==password_attempt:
             print (self.secret)
+        else:
+            print ("wrong password")
 
         
         """
